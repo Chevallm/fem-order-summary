@@ -1,0 +1,112 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --white: #fff;
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Red Hat Display';
+    background-color: var(--pale-blue);
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--white);
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 327px;
+    height: fit-content;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-body, .card-title {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.card-body {
+    font-weight: 500;
+}
+
+.card-image img {
+    width: 327px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.actions button {
+    padding: 1em 0;
+    border-radius: 5px;
+    border: unset;
+    background-color: transparent;
+    font-weight: 900;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.plan-name {
+    font-weight: 700;
+}
+
+.plan-pricing {
+    font-weight: 500;
+}
+
+.change {
+    font-weight: 700;
+}
+
+.bg-primary {
+    background-color: var(--bright-blue) !important;
+}
+
+.text-grey {
+    color: var(--desaturated-blue);
+}
+
+.text-primary {
+    color: var(--bright-blue);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.mt1 {
+    margin-top: 5px;
+}
